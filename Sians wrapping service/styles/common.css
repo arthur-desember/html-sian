@@ -1,0 +1,103 @@
+/* Common styles */
+/* This makes the nav bar occupy the full page. Margin of 0 px */
+body {
+
+    margin: 0px;
+    font-family: 'Roboto',sans-serif ;
+}
+/* The style below only apply to div tags in the index.html */
+/* div{
+
+    color: blue;
+} */
+/* To collect a class in css from html start off with a dot */
+/* Common nav styles */
+/* The nav wrapper is the dark blue top part where the address and contact details go */
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Roboto Slab, serif';
+
+}
+/* Footer styles */
+/* .footer {
+    background-color:lightsteelblue;
+    color: black;
+    font-family: "Ubuntu Condensed",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    margin-top: -4px;
+
+
+}
+.footer > .logo-footer img{
+
+    height: 200px;
+    width: 200px;
+    filter: brightness(120%);
+    /* opacity: 0.5; */
+
+
+/* }
+.footer > .footer-phone-hours span{
+    margin-left: 10px; 
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+
+.footer > .footer-phone-hours .hours{
+    
+    font-size: 0.8em;
+    color: blue;
+    text-transform: uppercase;
+    
+}
+.footer > .links-wrapper {
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+
+
+}
+.footer >.social-media-icons-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer >.social-media-icons-wrapper a {
+    font-size: 1.5em;
+    color: blue;
+    transition: 0.5s;
+    
+}
+
+.footer >.social-media-icons-wrapper a :hover{
+    color: chartreuse;
+    
+}
+
+.footer > .copyright-wrapper {
+    margin-bottom: 42px;
+    font-size: 0.7em;
+    color: darkblue;
+
+
+}  
+
+  /* .skewed-header{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}  */
+
+
+
+

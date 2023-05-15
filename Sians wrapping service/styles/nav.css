@@ -1,0 +1,153 @@
+.navigation-wrapper{
+    height: 190px;
+    background-color: lightblue;
+    color:red;
+    /* Flexbox container built into css to align elemnts on the page */
+    /* Flexbox container */
+    /* The navigation wrapper is now a flexbox container. */
+
+    display: flex;
+    
+    justify-content: space-between;
+    /* Do not use space surround to make the nav bar have no space
+    Use padding */
+    align-items: center;
+    /* padding: 100px; */
+    /* Padding on its own not good enough. create a rule for top etc */
+     /* padding-top: 60px;
+     padding-bottom: 60px;
+     padding-right: 100px;
+     padding-left:100px ; */
+     /* The padding on one line goes clockwise. */
+     padding:60px 100px 60px 100px ;
+     /* Or alternatively we can just 2 values in the argument which is the same. */
+    /* padding: 60px 100px; */
+}
+/* Make the left column a flex box container. */
+/* If you want to use the left column elsewhere and not specific to nav bar. */
+/* Left column styles */
+.navigation-wrapper>.left-column{
+    display: flex;
+    align-items: center;
+}
+/* The icon with margin right separates the phone from the contact hours. */
+.navigation-wrapper>.left-column>.icon {
+   margin-right: 15px;
+
+}
+/* Grab the icon with i tags. */
+.navigation-wrapper>.left-column>.icon i {
+
+    font-size: 2em;
+}
+/* Parent child relationship between left column andcontact hours. */
+
+.navigation-wrapper>.left-column>.contact-hours-wrapper{
+color:red;
+/* Use grid instead of flex. */
+/* This is to rearrange the contact hours. */
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 10px;
+
+}
+.navigation-wrapper>.left-column>.contact-hours-wrapper>.hours {
+
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8em;
+}
+.links-wrapper>.nav-link a {
+    font-family: 'Ubuntu', sans-serif;
+    color: red;
+
+}
+
+/* Centre column styles */
+
+.navigation-wrapper>.centre-column {
+
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-gap :42px;
+    width: 500px;
+}
+
+.navigation-wrapper>.centre-column>.banner-image {
+
+    display: flex;
+    justify-content: center;
+}
+.navigation-wrapper>.centre-column>.banner-image img {
+
+    width: 100px;
+    height: 100px;
+}
+
+.links-wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links-wrapper >.nav-link {
+
+    width: 70 px;
+    text-align: centre;
+}
+
+.links-wrapper >.nav-link a {
+
+    font-size:"Ubuntu",sans-serif ;
+    color: red;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links-wrapper >.nav-link a:hover {
+
+    color: #cea135;
+    letter-spacing: 20 px;
+
+}
+
+/* Right column styles */
+.navigation-wrapper>.right-column{
+
+    display: flex;
+    align-items: center;
+}
+
+.navigation-wrapper>.right-column>.address-wrapper{
+
+    color: red;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: right;
+}
+.navigation-wrapper>.right-column>.address-wrapper a {
+
+    color: red;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.navigation-wrapper>.right-column>.address-wrapper a:hover {
+
+    color: #cea135;
+}
+
+
+
+.navigation-wrapper > .right-column >.contact-icon {
+
+    margin-left: 15px;
+    font-size: 2em;
+}
+
+.navigation-wrapper > .right-column >.contact-icon a {
+
+    color: #cea135;
+    transition: 0.5s;
+}
+
